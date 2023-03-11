@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 /* eslint-disable linebreak-style */
 import { Grid,Container } from '@mui/material';
 import React from 'react';
@@ -13,8 +14,8 @@ const DefaulLayout: React.FC<DefaultLayoutProps> = ({ component: Component }) =>
       <Grid item xs={12}>
         <ResponsiveAppBar/>
       </Grid>
-      <Grid item xs={12}>
-        <Container>
+      <Grid item xs={12} >
+        <Container >
           <Component />
         </Container>
       </Grid>

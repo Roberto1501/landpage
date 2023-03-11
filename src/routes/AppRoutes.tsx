@@ -3,13 +3,16 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import DefaulLayout from '../config/layout/DefaultLayout';
+import Sobre from '../pages/Sobre';
+import Inscrever from '../pages/Inscrever';
 
 const AppRoutes: React.FC = () => {
   return (
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<DefaulLayout component={Home} />} />
-              
+        <Route path='/sobre' element={<DefaulLayout component={Sobre} />} />  
+        <Route path='/inscrever' element={<DefaulLayout component={Inscrever} />} />
       </Routes>
     </BrowserRouter>
   );
