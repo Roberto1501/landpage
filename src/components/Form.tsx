@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 
-import { Input, InputLabel } from '@mui/material';
+import { Button, Input, InputLabel } from '@mui/material';
 import FormControl from '@mui/material/FormControl';
 import React from 'react';
 
@@ -48,6 +48,12 @@ const Formulario: React.FC = () => {
             <InputLabel htmlFor="my-input6">Data de nascimento</InputLabel>
             <Input id="my-input6" aria-describedby="my-helper-text" />
           </FormControl>
+          <br /><br />
+          <Button variant="text"style={{
+            backgroundColor: '#1796D2',
+            color: '#fff',
+          }}>Inscrever</Button>
+
         </div>
       </div>
     </>
