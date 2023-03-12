@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import { GlobalStyles } from '@mui/material';
-import imagemData from '.././assets/imagemData.jpg';
+import images from '.././assets/images.jpg';
 
 const EstiloGlobal: React.FC = () => {
   return (
@@ -10,9 +10,14 @@ const EstiloGlobal: React.FC = () => {
         body:{
           padding: '0px',
           margin: '0px',
-          backgroundImage:`url(${imagemData}) `,
+          backgroundImage:`url(${images}) `,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
+          color: '#fff',
+          width: '100vw',
+          height: '100vh',
+          
+          
           
         },
       }}

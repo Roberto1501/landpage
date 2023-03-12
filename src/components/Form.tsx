@@ -1,63 +1,77 @@
+/* eslint-disable indent */
 /* eslint-disable linebreak-style */
 
 import { Button, Input, InputLabel } from '@mui/material';
 import FormControl from '@mui/material/FormControl';
+
 import React from 'react';
 
 const Formulario: React.FC = () => {
-  
- 
   return (
     <>
-      <div
-        style={{
-          display: 'flex',
-          width: '100%',
-          justifyContent: 'center'
-        }}
-      >
-        <div>
+      
+    
+       
           <h2>Tenho interesse</h2>
           <FormControl>
-            <InputLabel htmlFor="my-input2">Nome</InputLabel>
+            <InputLabel
+              htmlFor="my-input2"
+              style={{
+                color: '#fff'
+              }}
+            >
+              Nome
+            </InputLabel>
+            <Input id="my-input" aria-describedby="my-helper-text" color='primary' />
+          </FormControl>
+          <br />
+          <br />
+
+          <FormControl>
+            <InputLabel htmlFor="my-input3"style={{
+             color: '#fff'
+          }}>Email</InputLabel>
             <Input id="my-input" aria-describedby="my-helper-text" />
           </FormControl>
           <br />
           <br />
 
           <FormControl>
-            <InputLabel htmlFor="my-input3">Email</InputLabel>
+            <InputLabel htmlFor="my-input4" style={{
+             color: '#fff'
+          }}>Confirme seu e-mail</InputLabel>
             <Input id="my-input" aria-describedby="my-helper-text" />
           </FormControl>
           <br />
           <br />
 
           <FormControl>
-            <InputLabel htmlFor="my-input4">Confirme seu e-mail</InputLabel>
+            <InputLabel htmlFor="my-input5" style={{
+             color: '#fff'
+          }}>WhatsApp</InputLabel>
             <Input id="my-input" aria-describedby="my-helper-text" />
           </FormControl>
           <br />
           <br />
 
           <FormControl>
-            <InputLabel htmlFor="my-input5">WhatsApp</InputLabel>
+            <InputLabel htmlFor="my-input6" style={{
+             color: '#fff'
+          }}>Data de nascimento</InputLabel>
             <Input id="my-input" aria-describedby="my-helper-text" />
           </FormControl>
           <br />
           <br />
-
-          <FormControl>
-            <InputLabel htmlFor="my-input6">Data de nascimento</InputLabel>
-            <Input id="my-input" aria-describedby="my-helper-text" />
-          </FormControl>
-          <br /><br />
-          <Button variant="text"style={{
-            backgroundColor: '#1796D2',
-            color: '#fff',
-          }}>Inscrever</Button>
-
-        </div>
-      </div>
+          <Button
+            variant="text"
+            style={{
+              backgroundColor: '#1796D2',
+              color: '#fff'
+            }}
+          >
+            Inscrever
+          </Button>
+       
     </>
   );
 };
