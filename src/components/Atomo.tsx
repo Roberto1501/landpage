@@ -1,6 +1,6 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
-import atomo from '../assets/atomo.png';
+import atomo from '../assets/atomoBranco.png';
 import styled from 'styled-components';
 
 interface ImageProps {
@@ -9,6 +9,8 @@ interface ImageProps {
 }
 
 const AnimatedImage = styled.img<ImageProps>`
+
+width: 3000px;
 
 
   animation: myAnimation 5s infinite;
@@ -30,7 +32,7 @@ const Atomo: React.FC = () => {
   return (
     <React.Fragment>
       <div style={{
-        height: '70vh',
+        
         display: 'flex',
         justifyContent:'center',
         alignItems: 'center',

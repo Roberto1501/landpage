@@ -2,7 +2,7 @@
 /* eslint-disable linebreak-style */
 import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
-import Atomo from '../components/Atomo';
+import ImgHome from '../assets/imgHome.png';
 import { useNavigate } from 'react-router-dom';
 import { MouseEvent } from 'react';
 
@@ -46,14 +46,14 @@ function navigatePage(e: MouseEvent<HTMLButtonElement>): void {
               color: '#fff'
             }}
           >
-            learn more
+            Saiba mais
           </Button>
       </Grid>
       
   
       
       <Grid item xs={12} sm={6}>
-        <Atomo />
+        <img src={ImgHome} alt="Image" />
       </Grid>
      
     </Grid>

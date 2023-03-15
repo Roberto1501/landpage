@@ -15,10 +15,9 @@ const EstiloGlobal: React.FC = () => {
           backgroundSize: 'cover',
           color: '#fff',
           width: '100vw',
-          height: '100vh',
-          
-          
-          
+          minHeight: '100vh',
+          boxSizing: 'border-box',
+          overflowX: 'hidden',
         },
       }}
     />

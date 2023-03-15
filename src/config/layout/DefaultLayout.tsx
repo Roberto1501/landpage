@@ -3,6 +3,7 @@
 import { Grid,Container } from '@mui/material';
 import React from 'react';
 import ResponsiveAppBar from '../../components/AppBar';
+import Footer from '../../components/Footer';
 
 interface DefaultLayoutProps {
   component: React.FC;
@@ -17,6 +18,12 @@ const DefaulLayout: React.FC<DefaultLayoutProps> = ({ component: Component }) =>
       <Grid item xs={12} >
         <Container >
           <Component />
+        </Container>
+      </Grid>
+
+      <Grid item xs={12} >
+        <Container >
+          <Footer />
         </Container>
       </Grid>
     </Grid>

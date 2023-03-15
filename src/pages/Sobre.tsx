@@ -2,6 +2,7 @@
 /* eslint-disable linebreak-style */
 import { Grid, Typography } from '@mui/material';
 import React from 'react';
+import Atomo from '../components/Atomo';
 
 const Sobre: React.FC = () => {
   return (
@@ -12,20 +13,17 @@ const Sobre: React.FC = () => {
       <Grid item xs={12} sm={6} style={
         {
           paddingRight: '20px',
+          
         }
       }>
-        <Typography variant="h4">GrowDev</Typography>
-        <Typography>
-          Bem-vindo à GrowDev, onde estamos comprometidos em fornecer a você a melhor experiência em aprendizado de Data
-          Science. Acreditamos que a análise de dados é uma habilidade essencial para o sucesso em qualquer setor, e
-          estamos empenhados em oferecer a você as ferramentas e habilidades necessárias para se tornar um profissional
-          de destaque em Data Science. Nosso curso de Data Science foi cuidadosamente projetado para ajudar a
-          desenvolver habilidades em uma ampla variedade de tópicos, incluindo estatística, programação, visualização de
-          dados, aprendizado de máquina e muito mais. Com instrutores experientes e uma abordagem prática, você terá
-          acesso a materiais de qualidade e terá a oportunidade de aplicar seus conhecimentos em projetos reais. Nosso
-          objetivo é ajudá-lo a alcançar suas metas de carreira, fornecendo-lhe as habilidades e experiência necessárias
-          para ter sucesso em um campo em constante evolução. Estamos ansiosos para trabalhar com você e ajudá-lo a
-          alcançar seus objetivos em Data Science.
+        <Typography variant="h4" style={{
+          fontFamily: 'cursive',
+          marginBottom: '20px',
+        }}>GrowDev</Typography>
+        <Typography style={{fontFamily: 'cursive',
+        fontSize: '20px',
+      }}>
+        O curso de Data Science da GrowDev é projetado para ajudar os alunos a desenvolver habilidades valiosas em uma variedade de tópicos relacionados à análise de dados. O curso enfatiza uma abordagem prática e oferece instrução experiente e materiais de qualidade para preparar os alunos para aplicar seus conhecimentos em projetos do mundo real. Os tópicos abordados incluem estatística, programação, visualização de dados e aprendizado de máquina. O objetivo do curso é ajudar os alunos a alcançar suas metas de carreira em um campo em constante evolução.
         </Typography>
       </Grid>
       <Grid item xs={12} sm={6} 
@@ -34,19 +32,7 @@ const Sobre: React.FC = () => {
           paddingLeft: '20px',
         }
       }>
-        <Typography variant="h4">GrowDev</Typography>
-        <Typography>
-          Bem-vindo à GrowDev, onde estamos comprometidos em fornecer a você a melhor experiência em aprendizado de Data
-          Science. Acreditamos que a análise de dados é uma habilidade essencial para o sucesso em qualquer setor, e
-          estamos empenhados em oferecer a você as ferramentas e habilidades necessárias para se tornar um profissional
-          de destaque em Data Science. Nosso curso de Data Science foi cuidadosamente projetado para ajudar a
-          desenvolver habilidades em uma ampla variedade de tópicos, incluindo estatística, programação, visualização de
-          dados, aprendizado de máquina e muito mais. Com instrutores experientes e uma abordagem prática, você terá
-          acesso a materiais de qualidade e terá a oportunidade de aplicar seus conhecimentos em projetos reais. Nosso
-          objetivo é ajudá-lo a alcançar suas metas de carreira, fornecendo-lhe as habilidades e experiência necessárias
-          para ter sucesso em um campo em constante evolução. Estamos ansiosos para trabalhar com você e ajudá-lo a
-          alcançar seus objetivos em Data Science.
-        </Typography>
+        <Atomo />
       </Grid>
     </Grid>
   );
